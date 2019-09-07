@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int fact(int k){
+  if(k == 1 || k == 0) return 1;
+  return k*fact(k - 1);
+}
+
+int main() {
+  int n;
+  cin >> n;
+  int a[n],s = 0;
+  for(int i = 0; i < n; i++){
+    cin >> a[i];
+    s += fact(a[i]);
+  }
+  cout << double(s)/double(n);
+}
