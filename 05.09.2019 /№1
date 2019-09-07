@@ -15,4 +15,5 @@ int main() {
     s += fact(a[i]);
   }
   cout << double(s)/double(n);
+  return 0;
 }
