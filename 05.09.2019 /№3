@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  setlocale(LC_ALL, "Russian");
+  int a,d = 0;
+  cin >> a;
+  for(int i = 2; i <= a/2; i++){
+    if(a % i == 0){
+      d++;
+    }
+  }
+  if(d == 0){
+    cout << "Ввведеное число является простым";
+  } else cout << "Введеное число является составным. Количество делителей: " << d;
+  return 0;
+}
